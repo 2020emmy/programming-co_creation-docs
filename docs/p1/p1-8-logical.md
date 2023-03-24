@@ -121,6 +121,8 @@ client.loopBlaze({
 
 and, or, not
 
+下面的例子中，用到了`print(f'...')`这样的结构，请先忽略`f'...'`这种用法是什么，具体怎么用，这叫`f-string`，会在[《1-10.字符串》](./p1-10-string.md)中讲到。
+
 ```python
 a = 10
 b = 20
@@ -132,7 +134,7 @@ if (c > b and b > a):  # and两边都是真
     print("and两边都为真时整个式子为真")
 if (c > b and b < a):  # and两边有一边是真
     print(f'"c > b and b < a"的结果是: {c > b and b < a}')
-    print("and两边有一边为真时整个式子为真")
+    print("and两边有一边为真时整个式子为假")
 
 # Or
 if (a > b or b > c):  # or的两边都是假
@@ -175,3 +177,5 @@ if (not (a < b)):  # a<b是真
 | Not  | False | True  |
 
 2.将逻辑运算符应用在你的机器人代码上，并作为作业提交。
+
+传送门：[作业：1-8-逻辑运算符](https://github.com/coding-newbies-group/programming-co_creation-docs/issues/143)
